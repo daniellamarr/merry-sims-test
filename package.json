@@ -1,0 +1,20 @@
+{
+  "name": "merry-sims-test",
+  "version": "1.0.0",
+  "description": "Todo App helps keep track of a user's activities.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abejide001/merry-sims-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abejide001/merry-sims-test/issues"
+  },
+  "homepage": "https://github.com/abejide001/merry-sims-test#readme"
+}
