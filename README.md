@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/daniellamarr/merry-sims-test.svg?branch=master)](https://travis-ci.com/daniellamarr/merry-sims-test)
+
 # Todo App
 
 Todo App helps keep track of a user's activities.
