@@ -4,6 +4,8 @@
   "description": "Todo App helps keep track of a user's activities.",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint .",
+    "lintfix": "./node_modules/.bin/eslint . --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/abejide001/merry-sims-test/issues"
   },
-  "homepage": "https://github.com/abejide001/merry-sims-test#readme"
+  "homepage": "https://github.com/abejide001/merry-sims-test#readme",
+  "devDependencies": {
+    "eslint": "^5.11.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
 }
