@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // Versioning and Routes
 
-app.use('/api/v1/route', routes);
+app.use('/api/v1', routes);
 
 
 
@@ -27,7 +27,7 @@ app.use('*', (req, res, next) => {
 
 dotenv.config();
 
-const port = process.env.PORT || 9090;
+const port = process.env.PORT || 9091;
 app.listen(port, () => {
   console.log(`App is running, check me out on http://localhost:${port}`);
 });
