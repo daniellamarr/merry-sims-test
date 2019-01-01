@@ -27,7 +27,7 @@ app.use('*', (req, res, next) => {
 
 dotenv.config();
 
-const port = process.env.PORT || 9091;
+const port = process.env.PORT || 9090;
 app.listen(port, () => {
   console.log(`App is running, check me out on http://localhost:${port}`);
 });
