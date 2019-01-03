@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cc-coverage": "nyc report --reporter=lcov",
     "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
-    "babel-node": "babel-node app --presets=env",
+    "babel-node": "babel-node ./server/index.js --presets=env",
     "start:dev": "nodemon --exec babel-node ./server/index.js"
   },
   "repository": {
@@ -42,6 +42,7 @@
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
     "jsonwebtoken": "^8.4.0",
+    "nodemon": "^1.18.9",
     "pg": "^7.7.1",
     "pg-hstore": "^2.3.2",
     "sendgrid": "^5.2.3",

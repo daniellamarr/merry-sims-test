@@ -1,5 +1,5 @@
 import EmailVerification from './EmailVerification';
 
-export{
-    EmailVerification
-}
+export {
+  EmailVerification,
+};

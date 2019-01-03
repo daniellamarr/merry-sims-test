@@ -1,7 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
-import routes from './src/routes/index'
+import routes from './src/routes/index';
 
 
 // Set up the express app
@@ -16,9 +16,15 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/api/v1', routes);
 
 
+// Setup a index route
+app.all('/', (req, res) => {
+  res.status(200).json({
+    message: 'Welcome to Merry ToDo app',
+  });
+});
 
 // Setup a default catch-all route
-app.use('*', (req, res, next) => {
+app.all('/*', (req, res, next) => {
   res.status(404).json({
     message: 'Page not found',
   });
